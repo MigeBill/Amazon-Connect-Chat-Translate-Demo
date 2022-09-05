@@ -1,4 +1,4 @@
-import React, { Flex, Text, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Grid } from 'semantic-ui-react';
 import Amplify from 'aws-amplify';
 import Predictions, { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
@@ -210,16 +210,10 @@ const Ccp = () => {
         <main>
           <Grid columns='equal' stackable padded>
           <Grid.Row>
-            <Flex direction='column'>
-                <Text>Equivalent of Hidden CCP</Text>
             {/* CCP window will load here */}
             <div id="ccp-container"></div>
-            </Flex>
-            <Flex direction='column'>
-                <Text>Equivalent of Agent Toolbar</Text>
             {/* Translate window will laod here. We pass the agent state to be able to use this to push messages to CCP */}
             <div id="chatroom" ><Chatroom session={agentChatSessionState}/> </div> 
-            </Flex>
             </Grid.Row>
           </Grid>
         </main>
