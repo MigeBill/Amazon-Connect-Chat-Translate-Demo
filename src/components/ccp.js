@@ -211,9 +211,16 @@ const Ccp = () => {
           <Grid columns='equal' stackable padded>
           <Grid.Row>
             {/* CCP window will load here */}
+            <Flex direction = 'column'>
+                <Text>This is the equivalent of the hidden CCP</Text>
             <div id="ccp-container"></div>
+            </Flex>
             {/* Translate window will laod here. We pass the agent state to be able to use this to push messages to CCP */}
-            <div id="chatroom" ><Chatroom session={agentChatSessionState}/> </div> 
+            <Flex direction = 'column'>
+                <Text>This is the equivalent of the toolber in VeriTouch</Text>
+                <div id="chatroom" ><Chatroom session={agentChatSessionState}/> </div> 
+            </Flex>
+            
             </Grid.Row>
           </Grid>
         </main>
