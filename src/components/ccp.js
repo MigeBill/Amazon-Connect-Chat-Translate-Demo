@@ -1,4 +1,4 @@
-import React, { Flex, Text, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Grid } from 'semantic-ui-react';
 import Amplify from 'aws-amplify';
 import Predictions, { AmazonAIPredictionsProvider } from '@aws-amplify/predictions';
